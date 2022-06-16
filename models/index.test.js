@@ -11,5 +11,14 @@ describe('Sauce Model', () => {
 		expect(testSauce.name).toBe('Cholula')
 	})
 
+	test('Sauce has a name', async() => {
+		const testSauce = await Sauce.create({name:"Tabasco"})
+		expect(testSauce.name).toBe('Tabasco')
+	})
+
+	test('Sauce has an image', async() => {
+		
+	})
+
 
 })
