@@ -30,6 +30,7 @@ app.get('/sauces', async (req, res) => {
 
 app.get('/sauces/:id', async (req, res) => {
     const sauce = await Sauce.findByPk(req.params.id)
+    
     res.render('sauce', {sauce}); 
 })
 
